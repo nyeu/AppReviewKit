@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/AppReviewKit.svg?style=flat)](https://cocoapods.org/pods/AppReviewKit)
 [![Platform](https://img.shields.io/cocoapods/p/AppReviewKit.svg?style=flat)](https://cocoapods.org/pods/AppReviewKit)
 
+## Intro
+AppReviewKit helps you gain more positive and meaninful app reviews by making sure only users with a good experience are shown the system review. It also helps you gather feedback on what to improve by asking those users that are not happy with how the app behaves to send you an email with improvements.
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +26,11 @@ pod 'AppReviewKit'
 
 ## Author
 
-nyeu, joancardona.17@gmail.com
+Hi! I am Joan Cardona, the author of this library.
+I am an indie iOS developer and I found myself constantly creating this little screen to ask for reviews. I noticed that this improved my rating score and also the percentage of users reviewing my apps. I hope this helps you too.
+
+Joan Cardona, joancardona@gmail.com
+
 
 ## License
 

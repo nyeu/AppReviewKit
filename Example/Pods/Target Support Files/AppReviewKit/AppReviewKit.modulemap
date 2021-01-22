@@ -1,0 +1,6 @@
+framework module AppReviewKit {
+  umbrella header "AppReviewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

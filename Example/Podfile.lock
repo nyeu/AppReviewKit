@@ -1,0 +1,16 @@
+PODS:
+  - AppReviewKit (0.1.0)
+
+DEPENDENCIES:
+  - AppReviewKit (from `../`)
+
+EXTERNAL SOURCES:
+  AppReviewKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppReviewKit: 0a3f0d0d7c644679176752e004d4b1931ec68abf
+
+PODFILE CHECKSUM: 2355c1c3b8c506d73ba09a15a05d561f10ecdd5f
+
+COCOAPODS: 1.10.1
