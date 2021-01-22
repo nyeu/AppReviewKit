@@ -39,7 +39,11 @@ class ViewController: UIViewController {
                                                              titleColor: .black,
                                                              descriptionColor: .gray)
         
-        let reviewKit = AppReviewViewController(reviewTitle: "Do you like Mindful Affirmations?", reviewDescription: "It would help us a lot knowing your opinion", styleConfiguration: nil)
+        let reviewKit = AppReviewViewController(reviewTitle: "Do you like Mindful Affirmations?",
+                                                reviewDescription: "It would help us a lot knowing your opinion",
+                                                feedbackEmail: "joancardon@gmail.com",
+                                                styleConfiguration: nil)
+        reviewKit.includeAppBuildNumber = false
         present(reviewKit, animated: true, completion: nil)
     }
 }
