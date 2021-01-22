@@ -28,7 +28,10 @@ pod 'AppReviewKit'
 
 AppReviewKit is a very simple library that requires very little configuration. You can just launch it by creating a `AppReviewViewController` and present it wherever you want.
 ```
-AppReviewViewController(reviewTitle: "Do you like Mindful Affirmations?", reviewDescription: "It would help us a lot knowing your opinion", styleConfiguration: nil)
+let reviewKit = AppReviewViewController(reviewTitle: "Do you like Mindful Affirmations?",
+                                        reviewDescription: "It would help us a lot knowing your opinion",
+                                        feedbackEmail: "joancardon@gmail.com",
+                                        styleConfiguration: nil)
 present(reviewKit, animated: true, completion: nil)
 
 ```
@@ -40,6 +43,11 @@ let styleConfiguration = AppReviewStyleConfiguration(backgroundColor: .white,
                                                      descriptionColor: .gray)
                                                      
 ```
+
+If when you create `AppReviewViewController` you include a valid email in the field `feedbackEmail`, if the user replies negatively they will see a prompt to send you an email with feedback. If `feedbackEmail` is nil, it will just close `AppReviewViewController`. By default `AppReviewKit` will send the version number of the app in every feedback email, you can disable it setting `includeAppBuildNumber` to `false`:
+`reviewKit.includeAppBuildNumber = false`
+
+In both cases, `AppReviewViewControllerDelegate`  will be called on the action if it has been properly set up.
 
 
 ## Example
