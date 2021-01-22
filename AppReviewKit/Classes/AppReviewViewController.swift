@@ -9,32 +9,32 @@ import Foundation
 import StoreKit
 import SnapKit
 
-protocol AppReviewViewControllerDelegate: class {
+public protocol AppReviewViewControllerDelegate: class {
     func replied(positively: Bool)
 }
 
 public class AppReviewViewController: UIViewController {
-    weak var delegate: AppReviewViewControllerDelegate?
+    public weak var delegate: AppReviewViewControllerDelegate?
     let reviewView: AppReviewView
     
-    var reviewTitle: String {
+    public var reviewTitle: String {
         didSet {
             reviewView.viewTitle = reviewTitle
         }
     }
-    var reviewDescription: String {
+    public var reviewDescription: String {
         didSet {
             reviewView.viewDescription = reviewDescription
         }
     }
     
-    var positiveAnswer: String = "Yes" {
+    public var positiveAnswer: String = "Yes" {
         didSet {
             reviewView.positiveAnswer = positiveAnswer
         }
     }
     
-    var negativeAnswer: String = "No" {
+    public var negativeAnswer: String = "No" {
         didSet {
             reviewView.negativeAnswer = negativeAnswer
         }
@@ -69,14 +69,14 @@ public class AppReviewViewController: UIViewController {
         reviewView.negativeButton.addTarget(self, action: #selector(negativeAnswerTapped), for: .touchUpInside)
     }
     
-    @objc func positiveAnswerTapped() {
+    @objc private func positiveAnswerTapped() {
         delegate?.replied(positively: true)
         dismiss(animated: true) {
             SKStoreReviewController.requestReview()
         }
     }
     
-    @objc func negativeAnswerTapped() {
+    @objc private func negativeAnswerTapped() {
         delegate?.replied(positively: false)
         dismiss(animated: true, completion: nil)
     }
