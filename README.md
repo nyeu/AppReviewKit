@@ -6,7 +6,25 @@
 [![Platform](https://img.shields.io/cocoapods/p/AppReviewKit.svg?style=flat)](https://cocoapods.org/pods/AppReviewKit)
 
 ## Intro
+
 AppReviewKit helps you gain more positive and meaninful app reviews by making sure only users with a good experience are shown the system review. It also helps you gather feedback on what to improve by asking those users that are not happy with how the app behaves to send you an email with improvements.
+
+## How to use it
+
+AppReviewKit is a very simple library that requires very little configuration. You can just launch it by creating a `AppReviewViewController` and present it wherever you want.
+```
+AppReviewViewController(reviewTitle: "Do you like Mindful Affirmations?", reviewDescription: "It would help us a lot knowing your opinion", styleConfiguration: nil)
+present(reviewKit, animated: true, completion: nil)
+
+```
+If you want to customize it you can create an instance of `AppReviewStyleConfiguration` and fill it with the values that you prefer and pass it to your `AppReviewViewController`. For example:
+
+```
+let styleConfiguration = AppReviewStyleConfiguration(backgroundColor: .white,
+                                                     titleColor: .black,
+                                                     descriptionColor: .gray)
+                                                     
+```
 
 
 ## Example
@@ -14,6 +32,9 @@ AppReviewKit helps you gain more positive and meaninful app reviews by making su
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 13.0
+- Swift 5.0+
 
 ## Installation
 
