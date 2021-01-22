@@ -1,16 +1,24 @@
 PODS:
-  - AppReviewKit (0.1.0)
+  - AppReviewKit (0.1.0):
+    - SnapKit (~> 5.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - AppReviewKit (from `../`)
+  - SnapKit (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   AppReviewKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppReviewKit: 0a3f0d0d7c644679176752e004d4b1931ec68abf
+  AppReviewKit: d6dfafe63f08ccce56b05f82402fb9ab68daf8db
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 2355c1c3b8c506d73ba09a15a05d561f10ecdd5f
+PODFILE CHECKSUM: fbd85cf2cb9eb9c06dea030cb5711671d69678b0
 
 COCOAPODS: 1.10.1

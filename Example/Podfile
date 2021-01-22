@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 target 'AppReviewKit_Example' do
   pod 'AppReviewKit', :path => '../'
+  pod 'SnapKit', '~> 5.0'
 
   target 'AppReviewKit_Tests' do
     inherit! :search_paths
