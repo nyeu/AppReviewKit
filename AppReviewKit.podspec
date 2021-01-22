@@ -32,11 +32,7 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.source_files = 'AppReviewKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'AppReviewKit' => ['AppReviewKit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit', 'StoreKit'
+   s.frameworks = 'UIKit', 'StoreKit', 'MessageUI'
    s.dependency 'SnapKit', '~> 5.0'
 end
