@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'AppReviewKit_Example' do
+  pod 'AppReviewKit', :path => '../'
+
+  target 'AppReviewKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
